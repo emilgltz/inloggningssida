@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loginpage</title>
+</head>
+
+<body>
+ <!--kod till startsida-->
+ <div id="loginCode" class="box">
+<form>
+<label for="namn">Namn:</label><br>
+<input type="text" id="loginName" name="Namn" placeholder="Skriv namn.." autocomplete="off"><br>
+<label for="lösenord">Lösenord:</label><br>
+<input type="text" id="loginPassword" name="Lösenord" placeholder="Skriv lösenord.." autocomplete="off">
+<input type="button" id="loginButton" value="Logga in">
+</form>
+</div>
+
+ <!--kod till lyckad inloggning-->
+<div id="loginApproved" style="display: none;">
+<p id="loginApprovedProperty">Login success</p>
+<input type="button" id="logoutButton" value="Logga ut">
+</div>
+
+ <!--kod till misslyckad inloggning-->
+<div id="wrongUserData" style="display: none;">
+<p id="error">Login failure</p> 
+<input type="button" id="backButton" value="Tillbaka">
+</div>
+
+<!-- länkar till JS samt CSS  /-->
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+</body>
+</html>
